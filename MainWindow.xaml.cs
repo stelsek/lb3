@@ -187,9 +187,9 @@ namespace WpfApplication1
                 case ("3"):
                     break;
                 case ("4"):
+                    foZadan(array);
                     break;
                 case ("5"):
-                    
                     break;
                 case ("6"):
                     break;
@@ -323,6 +323,19 @@ namespace WpfApplication1
                 if (arr[i] > 25) { otvet.Text += "\n Ответ:" + (i + 1); break; }
             }
         }
+        void foZadan(int[] arr)
+        {
+            int temp = 0;
+            otvet.Text = "Массив:"; for (int i = 0; i < 10; i++)
+            {
+                temp += arr[i];
+                otvet.Text += arr[i] + " ";
+            }
+            otvet.Text += "\n cреднее:" + (temp / 10) + "\n Ответ:";
+            if (arr[0] > (temp / 10)) otvet.Text += "Да";
+            else otvet.Text += "Нет";
+        }
+
 
     }
 
