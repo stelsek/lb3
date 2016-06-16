@@ -20,7 +20,8 @@ using System.Threading;
 using System.Drawing;
 using System.Timers;
 using ZedGraph;
-namespace WpfApplication1
+
+namespace lb3
 {
 
 
@@ -214,6 +215,7 @@ namespace WpfApplication1
                 case ("15"):
                     break;
                 case ("16"):
+                    seszadan(array);
                     break;
             }
         }
@@ -351,6 +353,12 @@ namespace WpfApplication1
             }
 
         }
+        void seszadan(int[] arr)
+        {
+           Window1 a = new Window1 ();
+            a.ShowDialog();
+        }
+
 
     }
 
